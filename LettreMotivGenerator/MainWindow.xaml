@@ -48,9 +48,15 @@
                              Height="50"
                              Foreground="#fff"
                              FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding CompanyInfosViewCommand}"/>
                 
                 <RadioButton Content="Texte"
+                             Height="50"
+                             Foreground="#fff"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                <RadioButton Content="Générer"
                              Height="50"
                              Foreground="#fff"
                              FontSize="16"

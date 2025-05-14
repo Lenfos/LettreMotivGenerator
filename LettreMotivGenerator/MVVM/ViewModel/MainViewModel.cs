@@ -18,20 +18,24 @@ public class MainViewModel : ObservableObject
 
     public HomeViewModel HomeVM { get; set; }
     public MyInfosViewModel MyInfosVM { get; set; }
+    public CompanyInfosViewModel CompanyInfosVM { get; set; }
     
     
     public RelayCommand HomeViewCommand { get; set; }
     public RelayCommand MyInfosViewCommand { get; set; }
+    public RelayCommand CompanyInfosViewCommand { get; set; }
 
     public MainViewModel()
     {
         HomeVM = new HomeViewModel();
         MyInfosVM = new MyInfosViewModel();
+        CompanyInfosVM = new CompanyInfosViewModel();
         
         CurrentView = HomeVM;
         
         HomeViewCommand = new RelayCommand(o => CurrentView = HomeVM);
         MyInfosViewCommand = new RelayCommand(o => CurrentView = MyInfosVM);
+        CompanyInfosViewCommand = new RelayCommand(o => CurrentView = CompanyInfosVM);
         
     }
 }

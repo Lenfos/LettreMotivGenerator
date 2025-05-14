@@ -25,6 +25,14 @@
       <Resource Include="Font\Gabarito-VariableFont_wght.ttf">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Resource>
+      <None Remove="Image\undraw_private-files.png" />
+      <Resource Include="Image\undraw_private-files.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Image\undraw_building.png" />
+      <Resource Include="Image\undraw_building.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
     </ItemGroup>
 
     <ItemGroup>

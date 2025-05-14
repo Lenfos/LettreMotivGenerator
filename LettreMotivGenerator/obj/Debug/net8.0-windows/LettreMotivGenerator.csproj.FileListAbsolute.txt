@@ -50,3 +50,8 @@ C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug
 C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\MVVM\View\HomeView.baml
 C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\MVVM\View\MyInfosView.g.cs
 C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\MVVM\View\MyInfosView.baml
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\Theme\TextBoxTheme.baml
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\LettreMotivGenerator.sourcelink.json
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\Theme\ButtonTheme.baml
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\MVVM\View\CompanyInfos.g.cs
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\MVVM\View\CompanyInfos.baml

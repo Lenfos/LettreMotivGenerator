@@ -8,7 +8,9 @@
                 <ControlTemplate TargetType="{x:Type TextBox}">
                     <Grid>
                         <Border CornerRadius="10"
-                                Background="#353340">
+                                Background="#353340"
+                                Margin="0, 0, 20, 0"
+                                >
                             <Grid>
                                 <Rectangle StrokeThickness="1"/>
                                 <TextBox Margin="1"
@@ -24,7 +26,8 @@
                         <TextBlock
                                    FontSize="14"
                                    FontFamily="../Font/#Gabarito"
-                                   Foreground="White">
+                                   Foreground="White"
+                                   Margin="0, -18, 0, 0">
                             <TextBlock.Text>
                                 <Binding Path="(custom:TextBoxCustomProperties.CustomText)" RelativeSource="{RelativeSource TemplatedParent}" />
                             </TextBlock.Text>
