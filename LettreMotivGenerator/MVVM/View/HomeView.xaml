@@ -1,0 +1,136 @@
+<UserControl x:Class="LettreMotivGenerator.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:LettreMotivGenerator.MVVM.View"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800" 
+             Background="Transparent">
+    <StackPanel>
+        <TextBlock Text="Bienvenue à la flemme"
+                   Foreground="White"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0, 10, 0, 20"
+                   FontFamily="../../Font/#Gabarito"/>
+        
+        <Grid Margin="0, 50, 0, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Border Grid.RowSpan="3" Grid.Column="0" Width="400" Height="250">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0, 0, 400, 250"/>
+                </Border.Clip>
+                
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Commence à générer&#x0a;ta lettre de motivation"
+                                   Foreground="White"
+                                   FontSize="28"
+                                   Margin="20, 10, 10, 0"
+                                   FontFamily="../../Font/#Gabarito"/>
+                        <TextBlock Text="Vérifie les infos et c'est bon"
+                                   Foreground="White"
+                                   FontSize="18"
+                                   Margin="20, 10, 10, 0"
+                                   FontFamily="../../Font/#Gabarito"/>
+                        
+                    </StackPanel>
+                    <Image Source="../../Image/undraw_files-uploading.png" 
+                           Width="145"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Bottom"
+                           Margin="0, 0, 10, 5"/>
+                </Grid>
+            </Border>
+            
+            <Border Grid.Column="1" 
+                    Grid.Row="0" 
+                    CornerRadius="10"
+                    Height="75"
+                    Margin="30, 0, 0, 0">
+                
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 2">
+                        <GradientStop Color="#ffc520" Offset="0.0"/>
+                        <GradientStop Color="#E0AD1D" Offset="1"/>
+                    </LinearGradientBrush>
+                    
+                </Border.Background>
+                
+                <TextBlock Text="Mes Infos"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Margin="0, 0, 50, 0"
+                           Foreground="White"
+                           FontSize="22"
+                           FontFamily="../../Font/#Gabarito"/>
+            </Border>
+            
+            <Border Grid.Column="1" 
+                    Grid.Row="1" 
+                    CornerRadius="10"
+                    Height="75"
+                    Margin="30, 0, 0, 0">
+                
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 2">
+                        <GradientStop Color="#8440ff" Offset="0.0"/>
+                        <GradientStop Color="#6332BD" Offset="1"/>
+                    </LinearGradientBrush>
+                    
+                </Border.Background>
+                
+                <TextBlock Text="Infos de l'entrprise"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Margin="0, 0, 50, 0"
+                           Foreground="White"
+                           FontSize="22"
+                           FontFamily="../../Font/#Gabarito"/>
+            </Border>
+            
+            <Border Grid.Column="1" 
+                    Grid.Row="2" 
+                    CornerRadius="10"
+                    Height="75"
+                    Margin="30, 0, 0, 0">
+                
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 2">
+                        <GradientStop Color="#4eff91" Offset="0.0"/>
+                        <GradientStop Color="#309857" Offset="1"/>
+                    </LinearGradientBrush>
+                    
+                </Border.Background>
+                
+                <TextBlock Text="Texte"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Right"
+                           Margin="0, 0, 50, 0"
+                           Foreground="White"
+                           FontSize="22"
+                           FontFamily="../../Font/#Gabarito"/>
+            </Border>
+            
+        </Grid>
+    </StackPanel>
+</UserControl>

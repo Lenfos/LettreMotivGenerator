@@ -1,0 +1,25 @@
+﻿<Application x:Class="LettreMotivGenerator.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:LettreMotivGenerator"
+             xmlns:viewModel="clr-namespace:LettreMotivGenerator.MVVM.ViewModel"
+             xmlns:view="clr-namespace:LettreMotivGenerator.MVVM.View"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         <ResourceDictionary>
+             <ResourceDictionary.MergedDictionaries>
+                 <ResourceDictionary Source="Theme/MenuButtonsTheme.xaml"/>
+                 <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
+             </ResourceDictionary.MergedDictionaries>
+             
+             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
+                 <view:HomeView/>
+             </DataTemplate>
+             
+             <DataTemplate DataType="{x:Type viewModel:MyInfosViewModel}">
+                 <view:MyInfosView/>
+             </DataTemplate>
+             
+         </ResourceDictionary>
+    </Application.Resources>
+</Application>

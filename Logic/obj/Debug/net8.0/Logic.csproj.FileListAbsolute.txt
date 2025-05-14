@@ -1,0 +1,12 @@
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\bin\Debug\net8.0\Logic.deps.json
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\bin\Debug\net8.0\Logic.dll
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\bin\Debug\net8.0\Logic.pdb
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\obj\Debug\net8.0\Logic.csproj.AssemblyReference.cache
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\obj\Debug\net8.0\Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\obj\Debug\net8.0\Logic.AssemblyInfoInputs.cache
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\obj\Debug\net8.0\Logic.AssemblyInfo.cs
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\obj\Debug\net8.0\Logic.csproj.CoreCompileInputs.cache
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\obj\Debug\net8.0\Logic.dll
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\obj\Debug\net8.0\refint\Logic.dll
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\obj\Debug\net8.0\Logic.pdb
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\Logic\obj\Debug\net8.0\ref\Logic.dll

@@ -1,0 +1,79 @@
+﻿<Window x:Class="LettreMotivGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LettreMotivGenerator"
+        xmlns:viewModel="clr-namespace:LettreMotivGenerator.MVVM.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1020"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None">
+    
+    <Window.DataContext>
+        <viewModel:MainViewModel/> 
+    </Window.DataContext>
+    <Border Background="#272537" CornerRadius="20">
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Image Grid.Row="0" Grid.Column="0" Source="Image/Logo+Name.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="160"/>
+            
+            <StackPanel Grid.Row="1" Grid.Column="0">
+                <RadioButton Content="Home"
+                             Height="50"
+                             Foreground="#fff"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding HomeViewCommand}"/>
+                
+                <RadioButton Content="Mes Infos"
+                             Height="50"
+                             Foreground="#fff"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding MyInfosViewCommand}"/>
+                
+                <RadioButton Content="Entreprise"
+                             Height="50"
+                             Foreground="#fff"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                
+                <RadioButton Content="Texte"
+                             Height="50"
+                             Foreground="#fff"
+                             FontSize="16"
+                             Style="{StaticResource MenuButtonTheme}"/>
+            </StackPanel>
+            
+            
+            <TextBlock Grid.Column="1" 
+                       Grid.Row="0" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center"
+                       Text="LETTRE DE MOTIVATION GENERATOR"
+                       Foreground="White"
+                       FontSize="24"
+                       FontWeight="SemiBold"
+                       FontFamily="Font/#Gabarito"/>
+            
+            <ContentControl Grid.Column="1" 
+                            Grid.Row="1"
+                            Margin="10"
+                            Content="{Binding CurrentView}">
+            </ContentControl>
+            
+        </Grid>
+    </Border>
+</Window>

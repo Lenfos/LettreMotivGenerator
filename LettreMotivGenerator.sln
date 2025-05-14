@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LettreMotivGenerator", "LettreMotivGenerator\LettreMotivGenerator.csproj", "{EB6E3ED1-1E30-43AB-B3B0-5147BDF76512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{28E24455-6903-46B7-A5D4-61DC0A74D83F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB6E3ED1-1E30-43AB-B3B0-5147BDF76512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6E3ED1-1E30-43AB-B3B0-5147BDF76512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6E3ED1-1E30-43AB-B3B0-5147BDF76512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6E3ED1-1E30-43AB-B3B0-5147BDF76512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E24455-6903-46B7-A5D4-61DC0A74D83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E24455-6903-46B7-A5D4-61DC0A74D83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E24455-6903-46B7-A5D4-61DC0A74D83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E24455-6903-46B7-A5D4-61DC0A74D83F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
