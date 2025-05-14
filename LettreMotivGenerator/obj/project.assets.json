@@ -1355,19 +1355,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
-      },
-      "Logic/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "itext7": "9.1.0"
-        },
-        "compile": {
-          "bin/placeholder/Logic.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Logic.dll": {}
-        }
       }
     }
   },
@@ -4628,20 +4615,16 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
-    },
-    "Logic/1.0.0": {
-      "type": "project",
-      "path": "../Logic/Logic.csproj",
-      "msbuildProject": "../Logic/Logic.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "Logic >= 1.0.0"
+      "itext7 >= 9.1.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pierr\\.nuget\\packages\\": {}
+    "C:\\Users\\pierr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -4652,8 +4635,12 @@
       "packagesPath": "C:\\Users\\pierr\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\pierr\\RiderProjects\\LettreMotivGenerator\\LettreMotivGenerator\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\pierr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4666,11 +4653,7 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {
-            "C:\\Users\\pierr\\RiderProjects\\LettreMotivGenerator\\Logic\\Logic.csproj": {
-              "projectPath": "C:\\Users\\pierr\\RiderProjects\\LettreMotivGenerator\\Logic\\Logic.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -4687,6 +4670,12 @@
     "frameworks": {
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
+        "dependencies": {
+          "itext7": {
+            "target": "Package",
+            "version": "[9.1.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -4706,7 +4695,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

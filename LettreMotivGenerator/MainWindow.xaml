@@ -9,7 +9,8 @@
         Title="MainWindow" Height="600" Width="1020"
         Background="Transparent"
         AllowsTransparency="True"
-        WindowStyle="None">
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen">
     
     <Window.DataContext>
         <viewModel:MainViewModel/> 
@@ -60,7 +61,8 @@
                              Height="50"
                              Foreground="#fff"
                              FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding GenerateViewCommand}"/>
             </StackPanel>
             
             

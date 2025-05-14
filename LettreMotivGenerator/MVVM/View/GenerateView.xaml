@@ -1,0 +1,93 @@
+<UserControl x:Class="LettreMotivGenerator.MVVM.View.GenerateView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:LettreMotivGenerator.MVVM.View"
+             xmlns:custom="clr-namespace:LettreMotivGenerator.Core"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="Transparent">
+    <StackPanel>
+        <TextBlock Text="Générer le document" 
+            FontFamily="../../Font/#Gabarito"
+            FontSize="28"
+            Foreground="White"
+            Margin="0, 10, 0, 50"/>
+        
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Stretch">
+            <Grid Height="200"
+                  Margin="0, 0, 40, 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <TextBlock Text="Sois sûr que toutes tes informations sont bonnes avant de lancer la génération"
+                           Foreground="White"
+                           FontSize="14"
+                           FontFamily="../../Font/#Gabarito"
+                           TextWrapping="Wrap"
+                           Grid.Row="0"/>
+                
+                <Grid Grid.Row="1" Height="30">
+                    <TextBox Style="{StaticResource ModernTextBox}"
+                             custom:TextBoxCustomProperties.CustomText="Path du fichier"/>
+                    <Button Width="35"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Right"
+                            Margin="0, 0, 20, 5"
+                            Style="{StaticResource OverButton}">
+                        <Path Data="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                              Stroke="White"/>
+                    </Button>
+                </Grid>
+                
+                <Button Grid.Row="2"
+                        Content="Générer"
+                        Style="{StaticResource ModernButton}"></Button>
+            </Grid>
+            
+            <Border Height="250" 
+                    Width="300" 
+                    HorizontalAlignment="Right" 
+                    VerticalAlignment="Top"
+                    Margin="0, 12, 0, 0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0, 0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0, 0, 300, 250"/>
+                </Border.Clip>
+                
+                <Grid>
+                    <TextBlock Text="Générer le  &#x0a;document"
+                               Foreground="White"
+                               FontFamily="../Font/#Gabarito"
+                               FontSize="28"
+                               Margin="10, 10, 0, 0"
+                               FontWeight="SemiBold"/>
+                    <Image Source="../../Image/undraw_typewriter.png"
+                           Width="240"
+                           VerticalAlignment="Bottom"
+                           HorizontalAlignment="Center"
+                           RenderTransformOrigin="0.5, 0.5">
+                    </Image>
+                </Grid>
+                
+            </Border>
+            
+            
+        </StackPanel>
+        
+        
+    </StackPanel>
+</UserControl>

@@ -9,10 +9,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Logic\Logic.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
       <None Remove="Image\Logo+Name.png" />
       <Resource Include="Image\Logo+Name.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -33,10 +29,14 @@
       <Resource Include="Image\undraw_building.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Resource>
+      <None Remove="Image\undraw_typewriter.png" />
+      <Resource Include="Image\undraw_typewriter.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="MVVM\Model\" />
+      <PackageReference Include="itext7" Version="9.1.0" />
     </ItemGroup>
 
 </Project>

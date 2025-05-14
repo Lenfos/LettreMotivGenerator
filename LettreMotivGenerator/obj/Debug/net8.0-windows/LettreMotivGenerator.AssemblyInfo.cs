@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LettreMotivGenerator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+161b7a5efb72350a05c989b8399523cb7b622911")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+678d1de434928fa61fa86fc835663221f1cb17dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("LettreMotivGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LettreMotivGenerator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

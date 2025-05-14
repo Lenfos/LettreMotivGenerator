@@ -38,6 +38,7 @@
                          VerticalAlignment="Center"
                          Style="{StaticResource ModernTextBox}" 
                          custom:TextBoxCustomProperties.CustomText="Nom"
+                         x:Name="LastNameBox"
                          />
                 <TextBox Grid.Column="1" 
                          Grid.Row="0" 
@@ -45,6 +46,7 @@
                          VerticalAlignment="Center"
                          Style="{StaticResource ModernTextBox}" 
                          custom:TextBoxCustomProperties.CustomText="Prénom"
+                         x:Name="FirstNameBox"
                 />
                 <TextBox Grid.ColumnSpan="2" 
                          Grid.Column="0"
@@ -53,6 +55,7 @@
                          VerticalAlignment="Center"
                          Style="{StaticResource ModernTextBox}" 
                          custom:TextBoxCustomProperties.CustomText="Email"
+                         x:Name="MailBox"
                 />
                 <TextBox Grid.ColumnSpan="2" 
                          Grid.Column="0"
@@ -61,6 +64,7 @@
                          VerticalAlignment="Center"
                          Style="{StaticResource ModernTextBox}" 
                          custom:TextBoxCustomProperties.CustomText="Adresse"
+                         x:Name="StreetBox"
                 />
                 <TextBox Grid.Column="0" 
                          Grid.Row="3" 
@@ -68,6 +72,7 @@
                          VerticalAlignment="Center"
                          Style="{StaticResource ModernTextBox}" 
                          custom:TextBoxCustomProperties.CustomText="Ville"
+                         x:Name="CityBox"
                 />
                 
                 <TextBox Grid.Column="1" 
@@ -76,13 +81,15 @@
                          VerticalAlignment="Center"
                          Style="{StaticResource ModernTextBox}" 
                          custom:TextBoxCustomProperties.CustomText="Code Postal"
+                         x:Name="ZipCodeBox"
                 />
                 
                 <Button Grid.Row="4" 
                         Grid.ColumnSpan="2" 
                         Grid.Column="0"
                         Content="Sauvegarder"
-                        Style="{StaticResource ModernButton}">
+                        Style="{StaticResource ModernButton}"
+                        x:Name="SaveButton">
                         
                 </Button>
 

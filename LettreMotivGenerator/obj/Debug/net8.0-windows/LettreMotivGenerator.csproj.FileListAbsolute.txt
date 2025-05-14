@@ -55,3 +55,6 @@ C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug
 C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\Theme\ButtonTheme.baml
 C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\MVVM\View\CompanyInfos.g.cs
 C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\MVVM\View\CompanyInfos.baml
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\Theme\PathOverTheme.baml
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\MVVM\View\GenerateView.g.cs
+C:\Users\pierr\RiderProjects\LettreMotivGenerator\LettreMotivGenerator\obj\Debug\net8.0-windows\MVVM\View\GenerateView.baml

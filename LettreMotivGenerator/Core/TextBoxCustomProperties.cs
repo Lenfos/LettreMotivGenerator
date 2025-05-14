@@ -1,6 +1,5 @@
 using System.Windows;
 using System.Windows.Controls;
-using Microsoft.Extensions.DependencyModel;
 
 namespace LettreMotivGenerator.Core;
 

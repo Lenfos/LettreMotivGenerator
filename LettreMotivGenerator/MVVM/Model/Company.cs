@@ -1,4 +1,4 @@
-namespace Logic;
+namespace LettreMotivGenerator.MVVM.Model;
 
 public class Company
 {
