@@ -8,17 +8,21 @@ namespace LettreMotivGenerator.MVVM.Model;
 public class Serialization
 {
     
-    private readonly string filePath = "save.json";
+    private readonly string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "LettreMotivGenerator", "save.json");
     
     public void WriteToFile<T>(T objectToWrite)
     {
+        if (!Directory.Exists(Path.GetDirectoryName(filePath)!))
+        {
+            Directory.CreateDirectory(Path.GetDirectoryName(filePath)!);
+        }
         string json = JsonSerializer.Serialize(objectToWrite, new JsonSerializerOptions { WriteIndented = true });
         File.WriteAllText(filePath, json);
     }
 
     public DataRoot? ReadFromFile<T>()
     {
-        if (File.Exists(filePath))
+        if (Directory.Exists(Path.GetDirectoryName(filePath)!) && File.Exists(filePath))
         {
             string json = File.ReadAllText(filePath);
             return JsonSerializer.Deserialize<DataRoot>(json);
