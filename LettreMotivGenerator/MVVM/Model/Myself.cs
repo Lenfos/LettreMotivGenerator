@@ -4,12 +4,12 @@ public class Myself
 {
     #region Attributes
 
-    private string lastName = "Vanhove";
-    private string firstName = "Pierre";
-    private string email = "vanhove.pierre@proton.me";
-    private string street = "87 Avenue Waldeck Rochet";
-    private string city = "Saint Vallier";
-    private string zipCode = "71230";
+    private string lastName = "";
+    private string firstName = "";
+    private string email = "";
+    private string street = "";
+    private string city = "";
+    private string zipCode = "";
 
     #endregion
 
