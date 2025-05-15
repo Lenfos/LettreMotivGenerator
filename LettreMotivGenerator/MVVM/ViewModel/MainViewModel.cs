@@ -36,12 +36,14 @@ public class MainViewModel : ObservableObject
     public MyInfosViewModel MyInfosVM { get; set; }
     public CompanyInfosViewModel CompanyInfosVM { get; set; }
     public GenerateViewModel GenerateVM { get; set; }
+    public TextViewModel TextVM { get; set; }
     
     
     public RelayCommand HomeViewCommand { get; set; }
     public RelayCommand MyInfosViewCommand { get; set; }
     public RelayCommand CompanyInfosViewCommand { get; set; }
     public RelayCommand GenerateViewCommand { get; set; }
+    public RelayCommand TextViewCommand { get; set; }
 
     public MainViewModel()
     {
@@ -52,10 +54,12 @@ public class MainViewModel : ObservableObject
         MyInfosVM = new MyInfosViewModel(Data, this);
         CompanyInfosVM = new CompanyInfosViewModel(Data, this);
         GenerateVM = new GenerateViewModel(Data, this);
+        TextVM = new TextViewModel(Data,this);
         
         MyInfosVM.PropertyChanged += MyInfosVMOnPropertyChanged;
         CompanyInfosVM.PropertyChanged += CompanyInfosVMOnPropertyChanged;
         GenerateVM.PropertyChanged += GenerateVMOnPropertyChanged;
+        TextVM.PropertyChanged += TextVMOnPropertyChanged;
         
         CurrentView = HomeVM;
         
@@ -63,8 +67,20 @@ public class MainViewModel : ObservableObject
         MyInfosViewCommand = new RelayCommand(o => CurrentView = MyInfosVM);
         CompanyInfosViewCommand = new RelayCommand(o => CurrentView = CompanyInfosVM);
         GenerateViewCommand = new RelayCommand(o => CurrentView = GenerateVM);
+        TextViewCommand = new RelayCommand(o => CurrentView = TextVM);
         
         LoadDataRoot();
+    }
+
+    private void TextVMOnPropertyChanged(object? sender, PropertyChangedEventArgs e)
+    {
+        if (e.PropertyName == nameof(TextVM.Data))
+        {
+            if (sender is TextViewModel vm)
+            {
+                Data = vm.Data;
+            }
+        }
     }
 
     private void GenerateVMOnPropertyChanged(object? sender, PropertyChangedEventArgs e)

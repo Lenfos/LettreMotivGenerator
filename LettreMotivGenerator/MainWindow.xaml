@@ -56,7 +56,8 @@
                              Height="50"
                              Foreground="#fff"
                              FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding TextViewCommand}"/>
                 <RadioButton Content="Générer"
                              Height="50"
                              Foreground="#fff"

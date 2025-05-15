@@ -117,7 +117,7 @@
                 <Grid>
                     <TextBlock Text="Mes Infos"
                                Foreground="White"
-                               FontFamily="../Font/#Gabarito"
+                               FontFamily="../../Font/#Gabarito"
                                FontSize="28"
                                Margin="10, 10, 0, 0"
                                FontWeight="SemiBold"/>

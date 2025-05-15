@@ -34,6 +34,10 @@
       <Resource Include="Image\undraw_typewriter.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Resource>
+      <None Remove="Image\undraw_book-writer.png" />
+      <Resource Include="Image\undraw_book-writer.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
     </ItemGroup>
 
     <ItemGroup>

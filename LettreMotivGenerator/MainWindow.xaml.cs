@@ -18,10 +18,6 @@ namespace LettreMotivGenerator;
 public partial class MainWindow : Window
 {
     
-    private Company company;
-    private Myself myself;
-    private Generator pdf;
-    
     public MainWindow()
     {
         InitializeComponent();

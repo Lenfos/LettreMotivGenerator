@@ -19,7 +19,7 @@ public class Generator
 
     
     
-    public void PdfGenerator(Myself myInfo, Company companyInfo, string? newPath)
+    public void PdfGenerator(Myself myInfo, Company companyInfo, string corps, string? newPath)
     {
         if (newPath != null)
         {
@@ -56,17 +56,6 @@ public class Generator
             paragraph = new Paragraph("Madame, Monsieur,");
             paragraph.SetTextAlignment(TextAlignment.LEFT);
             doc.Add(paragraph).SetTextAlignment(TextAlignment.LEFT).SetBottomMargin(15);
-
-            string corps =
-                @"Je vous écris pour exprimer ma candidature en alternance en tant que programmeur de jeux dans le cadre de mon Master avec l’ICAN.
-
-Actuellement en échange international à l’UQAC en développement de jeux vidéo dans le cadre de ma troisième année de BUT Informatique, je souhaite poursuivre mes études dans ce domaine afin de parfaire ma connaissance du métier de programmeur.
-
-Passionné de jeux vidéo depuis mon enfance, intégrer votre entreprise représente une étape cruciale pour concrétiser mon projet professionnel. Votre entreprise reconnue au niveau international serait une incroyable opportunité pour moi.
-
-Ma formation à l’IUT et mon année au Québec m’ont permis d’apprendre de nombreuses compétences d’abord en développement d’application puis en développement de jeux vidéo notamment en gameplay et en réseau.
-
-Ces expériences ont été très enrichissantes, et j’ai hâte d’en commencer une nouvelle.";
 
             foreach (string iPara in corps.Split("\n"))
             {

@@ -29,6 +29,10 @@
              <DataTemplate DataType="{x:Type viewModel:GenerateViewModel}">
                  <view:GenerateView/>
              </DataTemplate>
+             
+             <DataTemplate DataType="{x:Type viewModel:TextViewModel}">
+                 <view:TextView/>
+             </DataTemplate>
          </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -4,11 +4,10 @@ using LettreMotivGenerator.MVVM.Model;
 
 namespace LettreMotivGenerator.MVVM.ViewModel;
 
-public class GenerateViewModel : ObservableObject
+public class TextViewModel : ObservableObject
 {
     private DataRoot _data;
     private MainViewModel _mainVM;
-    private Generator _generator;
 
     public DataRoot Data
     {
@@ -17,17 +16,14 @@ public class GenerateViewModel : ObservableObject
         {
             _data = value;
             OnPropertyChanged();
-            GenerateFile();
         }
     }
 
-    public GenerateViewModel(DataRoot data, MainViewModel mainVM)
+    public TextViewModel(DataRoot data, MainViewModel mainVM)
     {
         _data = data;
-        _mainVM = mainVM;
-        _generator = new Generator();
         
-        _mainVM.PropertyChanged += MainVMOnPropertyChanged;
+        mainVM.PropertyChanged += MainVMOnPropertyChanged;
     }
 
     private void MainVMOnPropertyChanged(object? sender, PropertyChangedEventArgs e)
@@ -39,10 +35,5 @@ public class GenerateViewModel : ObservableObject
                 _data = mvm.Data;
             }
         }
-    }
-
-    public void GenerateFile()
-    {
-        _generator.PdfGenerator(Data.Myself, Data.Company, Data.Text, Data.FilePath);
     }
 }
