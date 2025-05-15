@@ -74,8 +74,6 @@ Ces expériences ont été très enrichissantes, et j’ai hâte d’en commence
                 {
                     continue;
                 }
-                Console.WriteLine(iPara.Trim());
-                Console.WriteLine("---------------------");
                 paragraph = new Paragraph(iPara.Trim());
                 paragraph.SetMarginBottom(5);
                 paragraph.SetTextAlignment(TextAlignment.JUSTIFIED);
@@ -96,10 +94,20 @@ Ces expériences ont été très enrichissantes, et j’ai hâte d’en commence
             doc.Add(paragraph);
         }
 
+        OpenPdf(fullPath);
     }
 
     private string GenerateFullPath(string companyName)
     {
         return Path.Combine(mainPath, $"Lettre_Motivation_{companyName}.pdf");
+    }
+
+    private void OpenPdf(string fullPath)
+    {
+        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+        {
+            FileName = fullPath,
+            UseShellExecute = true
+        });
     }
 }

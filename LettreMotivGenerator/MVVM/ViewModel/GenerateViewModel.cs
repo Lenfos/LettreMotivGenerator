@@ -43,8 +43,6 @@ public class GenerateViewModel : ObservableObject
 
     public void GenerateFile()
     {
-        Console.WriteLine($"Generating");
-        
         _generator.PdfGenerator(Data.Myself, Data.Company, Data.FilePath);
     }
 }
