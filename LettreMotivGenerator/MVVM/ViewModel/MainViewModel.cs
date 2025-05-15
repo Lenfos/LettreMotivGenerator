@@ -73,6 +73,7 @@ public class MainViewModel : ObservableObject
         {
             if (sender is GenerateViewModel vm)
             {
+                Console.WriteLine("Saving Data");
                 Data = vm.Data;
             }
         }

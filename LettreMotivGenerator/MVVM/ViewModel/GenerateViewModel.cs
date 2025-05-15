@@ -8,6 +8,7 @@ public class GenerateViewModel : ObservableObject
 {
     private DataRoot _data;
     private MainViewModel _mainVM;
+    private Generator _generator;
 
     public DataRoot Data
     {
@@ -24,6 +25,7 @@ public class GenerateViewModel : ObservableObject
     {
         _data = data;
         _mainVM = mainVM;
+        _generator = new Generator();
         
         _mainVM.PropertyChanged += MainVMOnPropertyChanged;
     }
@@ -42,5 +44,7 @@ public class GenerateViewModel : ObservableObject
     public void GenerateFile()
     {
         Console.WriteLine($"Generating");
+        
+        _generator.PdfGenerator(Data.Myself, Data.Company, Data.FilePath);
     }
 }

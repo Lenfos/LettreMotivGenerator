@@ -24,11 +24,17 @@ public partial class GenerateView : UserControl
             if (DataContext is GenerateViewModel vm)
             {
                 this.vm = vm;
-
+                Initialized();
             }
         };
     }
 
+    private void Initialized()
+    {
+        filePath = vm.Data.FilePath;
+        PathBox.Text = filePath;
+    }
+    
     private void PickFilButton_OnClick(object sender, RoutedEventArgs e)
     {
         using var dialog = new FolderBrowserDialog
