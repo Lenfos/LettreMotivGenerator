@@ -18,9 +18,13 @@ public class Serialization
 
     public DataRoot? ReadFromFile<T>()
     {
-        string json = File.ReadAllText(filePath);
-        return JsonSerializer.Deserialize<DataRoot>(json);
-
+        if (File.Exists(filePath))
+        {
+            string json = File.ReadAllText(filePath);
+            return JsonSerializer.Deserialize<DataRoot>(json);
+        }
+        
+        return new DataRoot();
     }
     
 }

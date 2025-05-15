@@ -89,7 +89,8 @@
                         Grid.Column="0"
                         Content="Sauvegarder"
                         Style="{StaticResource ModernButton}"
-                        x:Name="SaveButton">
+                        x:Name="SaveButton"
+                        Click="SaveButton_OnClick">
                         
                 </Button>
 

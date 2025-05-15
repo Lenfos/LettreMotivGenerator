@@ -13,10 +13,10 @@ public class Company
 
     #region Properties
 
-    public string CompanyName { get; set; }
-    public string? Street { get; set; }
-    public string? City { get; set; }
-    public string? ZipCode { get; set; }
+    public string CompanyName { get => companyName; set => companyName = value; }
+    public string? Street { get => street; set => street = value; }
+    public string? City { get => city; set => city = value; }
+    public string? ZipCode { get => zipCode; set => zipCode = value; }
     
     #endregion
 

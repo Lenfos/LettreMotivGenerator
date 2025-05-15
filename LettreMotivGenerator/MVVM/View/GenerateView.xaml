@@ -18,7 +18,7 @@
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Stretch">
             <Grid Height="200"
-                  Margin="0, 0, 40, 0">
+                  Margin="0, 0, 20, 0">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -34,12 +34,15 @@
                 
                 <Grid Grid.Row="1" Height="30">
                     <TextBox Style="{StaticResource ModernTextBox}"
-                             custom:TextBoxCustomProperties.CustomText="Path du fichier"/>
+                             custom:TextBoxCustomProperties.CustomText="Path du fichier"
+                             x:Name="PathBox"/>
                     <Button Width="35"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Right"
                             Margin="0, 0, 20, 5"
-                            Style="{StaticResource OverButton}">
+                            Style="{StaticResource OverButton}"
+                            x:Name="PickFilButton"
+                            Click="PickFilButton_OnClick">
                         <Path Data="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
                               Stroke="White"/>
                     </Button>
@@ -47,7 +50,9 @@
                 
                 <Button Grid.Row="2"
                         Content="Générer"
-                        Style="{StaticResource ModernButton}"></Button>
+                        Style="{StaticResource ModernButton}"
+                        x:Name="GenerateButton"
+                        Click="GenerateButton_OnClick"/>
             </Grid>
             
             <Border Height="250" 

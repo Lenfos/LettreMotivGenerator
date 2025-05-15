@@ -38,6 +38,7 @@
                          VerticalAlignment="Center"
                          Style="{StaticResource ModernTextBox}" 
                          custom:TextBoxCustomProperties.CustomText="Nom de l'entreprise"
+                         x:Name="NameBox"
                          />
                 
                 <TextBox Grid.ColumnSpan="2" 
@@ -47,6 +48,7 @@
                          VerticalAlignment="Center"
                          Style="{StaticResource ModernTextBox}" 
                          custom:TextBoxCustomProperties.CustomText="Adresse"
+                         x:Name="StreetBox"
                 />
                 <TextBox Grid.Column="0" 
                          Grid.Row="2" 
@@ -54,6 +56,7 @@
                          VerticalAlignment="Center"
                          Style="{StaticResource ModernTextBox}" 
                          custom:TextBoxCustomProperties.CustomText="Ville"
+                         x:Name="CityBox"
                 />
                 
                 <TextBox Grid.Column="1" 
@@ -62,13 +65,15 @@
                          VerticalAlignment="Center"
                          Style="{StaticResource ModernTextBox}" 
                          custom:TextBoxCustomProperties.CustomText="Code Postal"
+                         x:Name="ZipCodeBox"
                 />
                 
                 <Button Grid.Row="4" 
                         Grid.ColumnSpan="2" 
                         Grid.Column="0"
                         Content="Sauvegarder"
-                        Style="{StaticResource ModernButton}">
+                        Style="{StaticResource ModernButton}"
+                        Click="ButtonBase_OnClick">
                         
                 </Button>
 
