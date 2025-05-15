@@ -2,25 +2,21 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Style BasedOn="{StaticResource {x:Type Button}}"
            TargetType="{x:Type Button}"
-           x:Key="ModernButton">
+           x:Key="ToolsButton">
         <Style.Setters>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border CornerRadius="10" Width="200" Height="60">
-                            <Border.Background>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                                    <GradientStop Color="#5bc3ff" Offset="0.0"/>
-                                    <GradientStop Color="#3aa0ff" Offset="1"/>
-                                </LinearGradientBrush>
-                            </Border.Background>
+                        <Border CornerRadius="50" 
+                                Width="15" 
+                                Height="15"
+                                Background="{TemplateBinding Background}">
                             
                             <TextBlock Text="{TemplateBinding Content}"
-                                       FontSize="24"
-                                       FontFamily="../Font/#Gabarito"
+                                       FontSize="16"
                                        Foreground="White"
-                                       VerticalAlignment="Center"
-                                       HorizontalAlignment="Center"/>
+                                       HorizontalAlignment="Center"
+                                       Margin="0, -5, 0, 0"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>

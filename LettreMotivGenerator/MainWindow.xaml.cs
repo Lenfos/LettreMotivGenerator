@@ -22,5 +22,22 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
-    
+
+    private void DrawWindow_OnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+    {
+        if (e.ChangedButton == MouseButton.Left)
+        {
+            this.DragMove();
+        }
+    }
+
+    private void Reduce_OnClick(object sender, RoutedEventArgs e)
+    {
+        this.WindowState = WindowState.Minimized;
+    }
+
+    private void Close_OnClick(object sender, RoutedEventArgs e)
+    {
+        this.Close();
+    }
 }

@@ -16,73 +16,103 @@
         <viewModel:MainViewModel/> 
     </Window.DataContext>
     <Border Background="#272537" CornerRadius="20">
-        
         <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="75"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
+            <Border Background="Transparent" 
+                    Height="50" 
+                    Panel.ZIndex="1" 
+                    VerticalAlignment="Top"
+                    CornerRadius="20 20 0 0"
+                    x:Name="DrawWindow"
+                    MouseLeftButtonDown="DrawWindow_OnMouseLeftButtonDown"/>
             
-            <Image Grid.Row="0" Grid.Column="0" Source="Image/Logo+Name.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="160"/>
+            <Button x:Name="Reduce"
+                    Style="{StaticResource ToolsButton}"
+                    Content="-"
+                    Background="#388050"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right"
+                    Panel.ZIndex="2"
+                    Margin="0, 10, 30, 0"
+                    Click="Reduce_OnClick"/>
             
-            <StackPanel Grid.Row="1" Grid.Column="0">
-                <RadioButton Content="Home"
-                             Height="50"
-                             Foreground="#fff"
-                             FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"
-                             IsChecked="True"
-                             Command="{Binding HomeViewCommand}"/>
+            <Button x:Name="Close"
+                    Style="{StaticResource ToolsButton}"
+                    Content="x"
+                    Background="#C62B2B"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Right"
+                    Panel.ZIndex="2"
+                    Margin="0, 10, 10, 0"
+                    Click="Close_OnClick"/>
+            
+            <Grid Panel.ZIndex="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
                 
-                <RadioButton Content="Mes Infos"
-                             Height="50"
-                             Foreground="#fff"
-                             FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding MyInfosViewCommand}"/>
+                <Image Grid.Row="0" Grid.Column="0" Source="Image/Logo+Name.png" HorizontalAlignment="Center" VerticalAlignment="Center" Width="160"/>
                 
-                <RadioButton Content="Entreprise"
-                             Height="50"
-                             Foreground="#fff"
-                             FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding CompanyInfosViewCommand}"/>
+                <StackPanel Grid.Row="1" Grid.Column="0">
+                    <RadioButton Content="Home"
+                                 Height="50"
+                                 Foreground="#fff"
+                                 FontSize="16"
+                                 Style="{StaticResource MenuButtonTheme}"
+                                 IsChecked="True"
+                                 Command="{Binding HomeViewCommand}"/>
+                    
+                    <RadioButton Content="Mes Infos"
+                                 Height="50"
+                                 Foreground="#fff"
+                                 FontSize="16"
+                                 Style="{StaticResource MenuButtonTheme}"
+                                 Command="{Binding MyInfosViewCommand}"/>
+                    
+                    <RadioButton Content="Entreprise"
+                                 Height="50"
+                                 Foreground="#fff"
+                                 FontSize="16"
+                                 Style="{StaticResource MenuButtonTheme}"
+                                 Command="{Binding CompanyInfosViewCommand}"/>
+                    
+                    <RadioButton Content="Texte"
+                                 Height="50"
+                                 Foreground="#fff"
+                                 FontSize="16"
+                                 Style="{StaticResource MenuButtonTheme}"
+                                 Command="{Binding TextViewCommand}"/>
+                    <RadioButton Content="Générer"
+                                 Height="50"
+                                 Foreground="#fff"
+                                 FontSize="16"
+                                 Style="{StaticResource MenuButtonTheme}"
+                                 Command="{Binding GenerateViewCommand}"/>
+                </StackPanel>
                 
-                <RadioButton Content="Texte"
-                             Height="50"
-                             Foreground="#fff"
-                             FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding TextViewCommand}"/>
-                <RadioButton Content="Générer"
-                             Height="50"
-                             Foreground="#fff"
-                             FontSize="16"
-                             Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding GenerateViewCommand}"/>
-            </StackPanel>
-            
-            
-            <TextBlock Grid.Column="1" 
-                       Grid.Row="0" 
-                       VerticalAlignment="Center" 
-                       HorizontalAlignment="Center"
-                       Text="LETTRE DE MOTIVATION GENERATOR"
-                       Foreground="White"
-                       FontSize="24"
-                       FontWeight="SemiBold"
-                       FontFamily="Font/#Gabarito"/>
-            
-            <ContentControl Grid.Column="1" 
-                            Grid.Row="1"
-                            Margin="10"
-                            Content="{Binding CurrentView}">
-            </ContentControl>
-            
+                
+                <TextBlock Grid.Column="1" 
+                           Grid.Row="0" 
+                           VerticalAlignment="Center" 
+                           HorizontalAlignment="Center"
+                           Text="LETTRE DE MOTIVATION GENERATOR"
+                           Foreground="White"
+                           FontSize="24"
+                           FontWeight="SemiBold"
+                           FontFamily="Font/#Gabarito"/>
+                
+                <ContentControl Grid.Column="1" 
+                                Grid.Row="1"
+                                Margin="10"
+                                Content="{Binding CurrentView}">
+                </ContentControl>
+                
+            </Grid>
         </Grid>
+        
     </Border>
 </Window>
